@@ -1,0 +1,36 @@
+{
+  "shops": [
+    {
+      "name": "中華の台所 中目黒店",
+      "explain": "フランスで23年間修行を積み、中華料理を日本人好みに落とし込んだ名店。ミシュラン八つ星を世界初取得したことでも有名である。店主の名は吉田優。",
+      "img": "https://s3-alpha-sig.figma.com/img/7983/a863/cc8c2196d0c24cb06b376e8978bf10c5?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pFYCK7Sj0RZV5Aizbuk80ug0T3JwVgEoNzM7PWrS~Qncxe8WXTzP3rUbubbbgyIreqvgbAduNG-4XOYuUspFKOOcB4MdhFLBsp53Ql8mjkb--xYflC-wP0HQb9BsD4f4tX8WSyVyC972dunvLCKtJf0lH6p8GV2spCDuoDDYVpwjpXle0LxWyeP2HEDL4J-YpY7bCF~uk-0kBgugqtwadGeOl9VcKiF0Brq4wbL65jRLW2~tufhgUXKqGKpLXI0mwKMdromn014MXLamTC0IXIBtTpZ9b0D1F2pedugD8u2hAHsS4rVYRPhLn4v-2ITIGQ7vd7jy1iDzspulGcCNfg__"
+    },
+    {
+      "name": "中華の台所 武蔵新城店",
+      "explain": "中国で23年間修行を積み、中華料理を日本人好みに落とし込んだ名店。ミシュラン審査員の舌を唸らせて、SNSでバズった過去を持つ。店主の名は吉田優。",
+      "img": "https://s3-alpha-sig.figma.com/img/7983/a863/cc8c2196d0c24cb06b376e8978bf10c5?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pFYCK7Sj0RZV5Aizbuk80ug0T3JwVgEoNzM7PWrS~Qncxe8WXTzP3rUbubbbgyIreqvgbAduNG-4XOYuUspFKOOcB4MdhFLBsp53Ql8mjkb--xYflC-wP0HQb9BsD4f4tX8WSyVyC972dunvLCKtJf0lH6p8GV2spCDuoDDYVpwjpXle0LxWyeP2HEDL4J-YpY7bCF~uk-0kBgugqtwadGeOl9VcKiF0Brq4wbL65jRLW2~tufhgUXKqGKpLXI0mwKMdromn014MXLamTC0IXIBtTpZ9b0D1F2pedugD8u2hAHsS4rVYRPhLn4v-2ITIGQ7vd7jy1iDzspulGcCNfg__"
+    },
+    {
+      "name": "中華の台所 渋谷店",
+      "explain": "中国で2ヶ月修行を積み、中華料理を日本人好みに落とし込めなかった名店。世界一リピートユーザーが少ないことでも有名である。店主の名は大野洋平。",
+      "img": "https://s3-alpha-sig.figma.com/img/7983/a863/cc8c2196d0c24cb06b376e8978bf10c5?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pFYCK7Sj0RZV5Aizbuk80ug0T3JwVgEoNzM7PWrS~Qncxe8WXTzP3rUbubbbgyIreqvgbAduNG-4XOYuUspFKOOcB4MdhFLBsp53Ql8mjkb--xYflC-wP0HQb9BsD4f4tX8WSyVyC972dunvLCKtJf0lH6p8GV2spCDuoDDYVpwjpXle0LxWyeP2HEDL4J-YpY7bCF~uk-0kBgugqtwadGeOl9VcKiF0Brq4wbL65jRLW2~tufhgUXKqGKpLXI0mwKMdromn014MXLamTC0IXIBtTpZ9b0D1F2pedugD8u2hAHsS4rVYRPhLn4v-2ITIGQ7vd7jy1iDzspulGcCNfg__"
+    },
+    {
+      "name": "中華の台所 新宿店",
+      "explain": "中国で23年間修行を積み、中華料理を日本人好みに落とし込んだ名店。ミシュラン八つ星を世界初取得したことでも有名である。店主の名は吉田優。",
+      "img": "https://s3-alpha-sig.figma.com/img/7983/a863/cc8c2196d0c24cb06b376e8978bf10c5?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pFYCK7Sj0RZV5Aizbuk80ug0T3JwVgEoNzM7PWrS~Qncxe8WXTzP3rUbubbbgyIreqvgbAduNG-4XOYuUspFKOOcB4MdhFLBsp53Ql8mjkb--xYflC-wP0HQb9BsD4f4tX8WSyVyC972dunvLCKtJf0lH6p8GV2spCDuoDDYVpwjpXle0LxWyeP2HEDL4J-YpY7bCF~uk-0kBgugqtwadGeOl9VcKiF0Brq4wbL65jRLW2~tufhgUXKqGKpLXI0mwKMdromn014MXLamTC0IXIBtTpZ9b0D1F2pedugD8u2hAHsS4rVYRPhLn4v-2ITIGQ7vd7jy1iDzspulGcCNfg__"
+    },
+    {
+      "name": "ハワイの台所 目黒店",
+      "explain": "ハワイで23年間修行を積み、ハワイ料理を日本人好みに落とし込んだ名店。ミシュラン八つ星を世界初取得したことでも有名である。店主の名は吉田優。",
+      "img": "https://s3-alpha-sig.figma.com/img/2aaa/7e5c/f5cdf128c79b3b7e60842ad0b4fd3dc8?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OWwZlEySZ~csfG4zg47Qcv57-PzshLknAe0ay5IZMmrW~CbxajzQTK3cyIGi6bcTix8HP4B4Xgsp3TL7IIWRa5zsWtVeNB0DG~vd0SCic4MXsRWLdbJrWx2GNseDQ1nCFtG0xs~u8V7G65jkalrB2JF9uvscT9Nlmvd7pb~aE2GeKxzKZbhXRLOfbkk2u7QeIytFKDxGxPuBSTDP2V8tgMfWg9fXE12r2DFy3lxKQwdbm22fOgc9m0kQSsfG7UXNXoaTQnuNGhAbZ06wrmtGfhj0SnnGYVM3izg5p3qlKeCgT2d40EqPbxsOW84OMtjfukr82obwpFxc38VedIgzcA__"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ]
+}

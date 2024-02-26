@@ -1,0 +1,62 @@
+[
+  {
+    "shop_id": 1,
+    "name": "中華の台所 中目黒店",
+    "address1": "〒123-1234",
+    "address2": "東京都世田谷区駒沢5-25-12 センタービル3F",
+    "access1": "田園都市線 駒沢大学駅から徒歩10分",
+    "access2": "田園都市線 桜新町駅からバスで10分",
+    "phoneNumber": "0120-122-1223",
+    "businessHours": "10:00 ~ 23:00",
+    "regularHoliday": "毎週土曜",
+    "img": "https://s3-alpha-sig.figma.com/img/7983/a863/cc8c2196d0c24cb06b376e8978bf10c5?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pFYCK7Sj0RZV5Aizbuk80ug0T3JwVgEoNzM7PWrS~Qncxe8WXTzP3rUbubbbgyIreqvgbAduNG-4XOYuUspFKOOcB4MdhFLBsp53Ql8mjkb--xYflC-wP0HQb9BsD4f4tX8WSyVyC972dunvLCKtJf0lH6p8GV2spCDuoDDYVpwjpXle0LxWyeP2HEDL4J-YpY7bCF~uk-0kBgugqtwadGeOl9VcKiF0Brq4wbL65jRLW2~tufhgUXKqGKpLXI0mwKMdromn014MXLamTC0IXIBtTpZ9b0D1F2pedugD8u2hAHsS4rVYRPhLn4v-2ITIGQ7vd7jy1iDzspulGcCNfg__"
+  },
+  {
+    "shop_id": 2,
+    "name": "中華の台所 武蔵新城店",
+    "address1": "〒123-1234",
+    "address2": "神奈川県川崎市中原区新城5-25-12 センタービル3F",
+    "access1": "JR南武線 武蔵新城駅から徒歩3分",
+    "access2": "JR南武線 武蔵中原駅から徒歩15分",
+    "phoneNumber": "044-122-1223",
+    "businessHours": "10:00 ~ 21:00",
+    "regularHoliday": "毎週火曜",
+    "img": "https://s3-alpha-sig.figma.com/img/7983/a863/cc8c2196d0c24cb06b376e8978bf10c5?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pFYCK7Sj0RZV5Aizbuk80ug0T3JwVgEoNzM7PWrS~Qncxe8WXTzP3rUbubbbgyIreqvgbAduNG-4XOYuUspFKOOcB4MdhFLBsp53Ql8mjkb--xYflC-wP0HQb9BsD4f4tX8WSyVyC972dunvLCKtJf0lH6p8GV2spCDuoDDYVpwjpXle0LxWyeP2HEDL4J-YpY7bCF~uk-0kBgugqtwadGeOl9VcKiF0Brq4wbL65jRLW2~tufhgUXKqGKpLXI0mwKMdromn014MXLamTC0IXIBtTpZ9b0D1F2pedugD8u2hAHsS4rVYRPhLn4v-2ITIGQ7vd7jy1iDzspulGcCNfg__"
+  },
+  {
+    "shop_id": 3,
+    "name": "中華の台所 渋谷店",
+    "address1": "〒123-1234",
+    "address2": "東京都渋谷区渋谷5-25-12 センタービル3F",
+    "access1": "JR山手線 渋谷駅から徒歩10分",
+    "access2": "JR山手線 恵比寿駅から徒歩15分",
+    "phoneNumber": "03-1223-1223",
+    "businessHours": "17:00 ~ 26:00",
+    "regularHoliday": "なし",
+    "img": "https://s3-alpha-sig.figma.com/img/7983/a863/cc8c2196d0c24cb06b376e8978bf10c5?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pFYCK7Sj0RZV5Aizbuk80ug0T3JwVgEoNzM7PWrS~Qncxe8WXTzP3rUbubbbgyIreqvgbAduNG-4XOYuUspFKOOcB4MdhFLBsp53Ql8mjkb--xYflC-wP0HQb9BsD4f4tX8WSyVyC972dunvLCKtJf0lH6p8GV2spCDuoDDYVpwjpXle0LxWyeP2HEDL4J-YpY7bCF~uk-0kBgugqtwadGeOl9VcKiF0Brq4wbL65jRLW2~tufhgUXKqGKpLXI0mwKMdromn014MXLamTC0IXIBtTpZ9b0D1F2pedugD8u2hAHsS4rVYRPhLn4v-2ITIGQ7vd7jy1iDzspulGcCNfg__"
+  },
+  {
+    "shop_id": 4,
+    "name": "中華の台所 新宿店",
+    "address1": "〒123-1234",
+    "address2": "東京都新宿区大久保5-25-12 センタービル3F",
+    "access1": "JR山手線 新宿から徒歩10分",
+    "access2": "JR山手線 新大久保から徒歩15分",
+    "phoneNumber": "03-1223-1223",
+    "businessHours": "17:00 ~ 26:00",
+    "regularHoliday": "なし",
+    "img": "https://s3-alpha-sig.figma.com/img/7983/a863/cc8c2196d0c24cb06b376e8978bf10c5?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pFYCK7Sj0RZV5Aizbuk80ug0T3JwVgEoNzM7PWrS~Qncxe8WXTzP3rUbubbbgyIreqvgbAduNG-4XOYuUspFKOOcB4MdhFLBsp53Ql8mjkb--xYflC-wP0HQb9BsD4f4tX8WSyVyC972dunvLCKtJf0lH6p8GV2spCDuoDDYVpwjpXle0LxWyeP2HEDL4J-YpY7bCF~uk-0kBgugqtwadGeOl9VcKiF0Brq4wbL65jRLW2~tufhgUXKqGKpLXI0mwKMdromn014MXLamTC0IXIBtTpZ9b0D1F2pedugD8u2hAHsS4rVYRPhLn4v-2ITIGQ7vd7jy1iDzspulGcCNfg__"
+  },
+  {
+    "shop_id": 5,
+    "name": "ハワイの台所 目黒店",
+    "address1": "〒123-1234",
+    "address2": "東京都目黒区目黒5-25-12 センタービル3F",
+    "access1": "JR山手線 目黒駅から徒歩10分",
+    "access2": "JR山手線 五反田駅から徒歩15分",
+    "phoneNumber": "03-1223-1223",
+    "businessHours": "17:00 ~ 26:00",
+    "regularHoliday": "なし",
+    "img": "https://s3-alpha-sig.figma.com/img/2aaa/7e5c/f5cdf128c79b3b7e60842ad0b4fd3dc8?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OWwZlEySZ~csfG4zg47Qcv57-PzshLknAe0ay5IZMmrW~CbxajzQTK3cyIGi6bcTix8HP4B4Xgsp3TL7IIWRa5zsWtVeNB0DG~vd0SCic4MXsRWLdbJrWx2GNseDQ1nCFtG0xs~u8V7G65jkalrB2JF9uvscT9Nlmvd7pb~aE2GeKxzKZbhXRLOfbkk2u7QeIytFKDxGxPuBSTDP2V8tgMfWg9fXE12r2DFy3lxKQwdbm22fOgc9m0kQSsfG7UXNXoaTQnuNGhAbZ06wrmtGfhj0SnnGYVM3izg5p3qlKeCgT2d40EqPbxsOW84OMtjfukr82obwpFxc38VedIgzcA__"
+  }
+]
