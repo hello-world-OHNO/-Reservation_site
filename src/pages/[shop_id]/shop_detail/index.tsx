@@ -26,13 +26,13 @@ interface ShopInfo {
 
 const ShopDetailPage = () => {
   const router = useRouter();
-  const { shop_id } = router.query;
+  const { shop_id } = router.query as { shop_id: string };
   const [shopInfo, setShopInfo] = useState<ShopInfo | null>(null);
 
   useEffect(() => {
     const fetchShopInfo = async () => {
       try {
-        const response = await fetch(`http://localhost:3002/${shop_id}`);
+        const response = await fetch(`http://localhost:3001/info/${shop_id}`);
         const data = await response.json();
         setShopInfo(data);
       } catch (error) {
@@ -73,7 +73,7 @@ const ShopDetailPage = () => {
                 <div style={{ fontSize: "20px", marginTop: "50px" }}>{shopInfo.regularHoliday}</div>
               </Box>
             </Flex>
-            <Link href={`/${shop_id}/rsv`}>
+            <Link href={`http://localhost:3000/${shop_id}/rsv`}>
               <Flex justifyContent="center">
                 <Button marginTop="40px" marginBottom="20px" colorScheme="blue" fontSize="14px" width="90px" height="36px">
                   予約する

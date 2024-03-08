@@ -24,7 +24,7 @@ export default function Home() {
   useEffect(() => {
     async function fetchShopList() {
       try {
-        const response = await fetch("http://localhost:3001/shops");
+        const response = await fetch("http://localhost:3001/list");
         const data: Shop[] = await response.json();
         setShopList(data);
       } catch (error) {
@@ -39,29 +39,31 @@ export default function Home() {
       <Header />
       <Box margin="62px 16%">
         <Flex flexDirection="column" alignItems="center" >
-          <Flex borderRadius="md" justifyContent="space-between" width="844px" maxHeight="1041px" backgroundColor="#FBF7F7">
-            <UnorderedList listStyleType="none">
-              {shopList.map((shop) => (
-                <ListItem key={shop.shop_id}>
-                  <Link href={`${shop.shop_id}/shop_detail`}>
-                    <Box display="flex" padding="20px">
-                      <Box display="flex" alignItems="center" marginRight="18px">
-                        <img src={shop.img} alt={shop.name} style={{ width: '120px', height: '120px' }} />
-                      </Box>
-                      <Box>
-                        <h2 style={{ fontWeight: 'bold', fontSize: '24px', marginBottom: "20px" }}>{shop.name}</h2>
-                        <p style={{ fontSize: '14px' }}>{shop.explainA}</p>
-                        <p style={{ fontSize: '14px' }}>{shop.explainB}</p>
-                        <p style={{ fontSize: '14px' }}>{shop.explainC}</p>
-                      </Box>
-                    </Box>
-                  </Link>
+          <Flex borderRadius="md" justifyContent="space-between" width="844px" height="1041px" padding="20px" backgroundColor="#FBF7F7">
+            <UnorderedList listStyleType="none" marginLeft="0px">
+              {shopList.map((list) => (
+                <ListItem key={list.shop_id} style={{ marginBottom: "50px" }}>
+                  <Flex alignItems="center" borderRadius="md" backgroundColor={"white"} width="804px" height="156px" padding="18px">
+                    <Link href={`${list.shop_id}/shop_detail`} >
+                      <Flex alignItems="center">
+                        <Box>
+                          <img src={list.img} alt={list.name} style={{ width: '120px', height: '120px', marginRight: "16px" }} />
+                        </Box>
+                        <Box>
+                          <h2 style={{ fontWeight: 'bold', fontSize: '24px', marginBottom: "20px" }}>{list.name}</h2>
+                          <p style={{ fontSize: '14px' }}>{list.explainA}</p>
+                          <p style={{ fontSize: '14px' }}>{list.explainB}</p>
+                          <p style={{ fontSize: '14px' }}>{list.explainC}</p>
+                        </Box>
+                      </Flex>
+                    </Link>
+                  </Flex>
                 </ListItem>
               ))}
             </UnorderedList>
           </Flex>
         </Flex>
       </Box>
-    </ChakraProvider>
+    </ChakraProvider >
   );
 }

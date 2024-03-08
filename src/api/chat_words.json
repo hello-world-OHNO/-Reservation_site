@@ -1,0 +1,16 @@
+{
+    "words": [
+        {
+            "keyword": "時間",
+            "message": "営業時間は各店舗詳細情報に記載されています。\n http://localhost:3000/"
+        },
+        {
+            "keyword": "日",
+            "message": "定休日は各店舗詳細情報に記載されています。\n http://localhost:3000/"
+        },
+        {
+            "keyword": "問合わせ",
+            "message": "お問い合わせはこちらから可能です。\n http://localhost:3000/contact "
+        }
+    ]
+}

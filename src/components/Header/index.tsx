@@ -6,6 +6,7 @@ const Header = () => {
     <Flex justifyContent="space-between"
       maxWidth="1244px"
       height="48px"
+      marginBottom="5px"
     >
       <Box display="flex" alignItems="center" padding="28px">
         <a href='http://localhost:3000' style={{ fontWeight: 'bold' }}>HW RVS</a>
@@ -14,7 +15,7 @@ const Header = () => {
       </Box>
       <Box display="flex" alignItems="center" padding="28px">
         <a href="http://localhost:3000" style={{ padding: '12px', textDecoration: "none", color: "black" }} >店舗一覧</a>
-        <a href="http://localhost:3000/form" style={{ padding: '12px', textDecoration: "none", color: "black" }}>お問い合わせ</a>
+        <a href="http://localhost:3000/contact" style={{ padding: '12px', textDecoration: "none", color: "black" }}>お問い合わせ</a>
         <a href="http://localhost:3000/chat" style={{ padding: '12px', textDecoration: "none", color: "black" }}>chat</a>
       </Box>
     </Flex>
