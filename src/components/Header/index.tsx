@@ -17,6 +17,7 @@ const Header = () => {
         <a href="http://localhost:3000" style={{ padding: '12px', textDecoration: "none", color: "black" }} >店舗一覧</a>
         <a href="http://localhost:3000/contact" style={{ padding: '12px', textDecoration: "none", color: "black" }}>お問い合わせ</a>
         <a href="http://localhost:3000/chat" style={{ padding: '12px', textDecoration: "none", color: "black" }}>chat</a>
+        <a href="http://localhost:3000/login" style={{ padding: '12px', textDecoration: "none", color: "black" }}>ログイン</a>
       </Box>
     </Flex>
   );
