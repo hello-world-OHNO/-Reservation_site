@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { Box, ChakraProvider, extendTheme, Flex, Button } from '@chakra-ui/react';
 import Header from "../../../components/Header";
 import Link from 'next/link';
-
+import InfoItem from '@/components/InfoItem';
 
 const customTheme = extendTheme({
   fonts: {
@@ -29,6 +29,7 @@ const ShopDetailPage = () => {
   const { shop_id } = router.query as { shop_id: string };
   const [shopInfo, setShopInfo] = useState<ShopInfo | null>(null);
 
+  // 店舗情報取得
   useEffect(() => {
     const fetchShopInfo = async () => {
       try {
@@ -56,13 +57,13 @@ const ShopDetailPage = () => {
             <h1 style={{ fontWeight: 'bold', fontSize: '48px', padding: "60px" }}>{shopInfo.name}</h1>
             <img src={shopInfo.img} alt={shopInfo.name} style={{ width: '720px', height: '287px', marginLeft: "60px" }} />
             <Flex marginTop="60px" width="720px" height="378px" marginLeft="60px" backgroundColor="white">
+
+              {/* 項目 */}
               <Box width="180px" height="428px">
-                <div style={{ fontWeight: 'bold', fontSize: "24px", marginBottom: "40px", marginLeft: "17px", marginTop: "10px" }}>住所</div>
-                <div style={{ fontWeight: 'bold', fontSize: "24px", marginBottom: "40px", marginLeft: "17px" }}>アクセス</div>
-                <div style={{ fontWeight: 'bold', fontSize: "24px", marginBottom: "40px", marginLeft: "17px" }}>電話番号</div>
-                <div style={{ fontWeight: 'bold', fontSize: "24px", marginBottom: "40px", marginLeft: "17px" }}>営業時間</div>
-                <div style={{ fontWeight: 'bold', fontSize: "24px", marginBottom: "40px", marginLeft: "17px" }}>定休日</div>
+                <InfoItem />
               </Box>
+
+              {/* 情報 */}
               <Box width="690px" height="428px">
                 <div style={{ fontSize: "20px", marginTop: "10px" }}>{shopInfo.address1}</div>
                 <div style={{ fontSize: "20px" }}>{shopInfo.address2}</div>
@@ -72,8 +73,11 @@ const ShopDetailPage = () => {
                 <div style={{ fontSize: "20px", marginTop: "45px" }}>{shopInfo.businessHours}</div>
                 <div style={{ fontSize: "20px", marginTop: "50px" }}>{shopInfo.regularHoliday}</div>
               </Box>
+
             </Flex>
             <Link href={`http://localhost:3000/${shop_id}/rsv`}>
+
+              {/* ボタン */}
               <Flex justifyContent="center">
                 <Button marginTop="40px" marginBottom="20px" colorScheme="blue" fontSize="14px" width="90px" height="36px">
                   予約する

@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { Box, ChakraProvider, extendTheme, Flex, Button, Input, FormControl, FormLabel, Text, Select, Avatar } from '@chakra-ui/react';
-import { useForm } from "react-hook-form";
 import Header from "../../components/Header";
 import { useRouter } from 'next/router';
 
@@ -17,7 +16,7 @@ interface Message {
   avatar: string;
 }
 
-function ChatPage() {
+const ChatPage = () => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [inputValue, setInputValue] = useState<string>('');
   const router = useRouter();
@@ -36,6 +35,14 @@ function ChatPage() {
       if (keyword) {
         const autoReply: Message = {
           text: keyword.message,
+          sender: 'Chat Bot',
+          avatar: 'https://1.bp.blogspot.com/-unsJSo8n2rs/WxvKIHzgUEI/AAAAAAABMnA/ePQkMsfOPNYzYhljlq86h1YKdbinHfWigCLcBGAs/s800/job_telephone_operator_man_majime.png'
+        };
+        setMessages(prevMessages => [autoReply, ...prevMessages]);
+      } else {
+        // 検索ワードが見つからない場合、定型文を返す
+        const autoReply: Message = {
+          text: '申し訳ありませんが、該当する情報が見つかりませんでした。',
           sender: 'Chat Bot',
           avatar: 'https://1.bp.blogspot.com/-unsJSo8n2rs/WxvKIHzgUEI/AAAAAAABMnA/ePQkMsfOPNYzYhljlq86h1YKdbinHfWigCLcBGAs/s800/job_telephone_operator_man_majime.png'
         };
@@ -88,7 +95,7 @@ function ChatPage() {
           ))}
         </Box>
 
-        {/* ボタン */}
+        {/* 送信欄 */}
         <Box display="flex" alignItems="center" justifyContent="flex-end" padding="20px">
           <Input width="1062px" height="40px" flex="1" marginRight="10px" backgroundColor="white" value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
           <Button colorScheme="blue" onClick={handleSendMessage}>送信</Button>

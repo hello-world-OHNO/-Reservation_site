@@ -1,7 +1,7 @@
 import { Box, ChakraProvider, extendTheme, Flex, ListItem, UnorderedList } from '@chakra-ui/react';
-import Header from "../components/Header";
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Header from "../components/Header";
 
 const customTheme = extendTheme({
   fonts: {
@@ -18,11 +18,12 @@ interface Shop {
   img: string;
 }
 
-export default function Home() {
+const Home = () => {
   const [shopList, setShopList] = useState<Shop[]>([]);
-  // アロー関数、関数切り出し
+
+  // 店舗情報取得
   useEffect(() => {
-    async function fetchShopList() {
+    const fetchShopList = async () => {
       try {
         const response = await fetch("http://localhost:3001/list");
         const data: Shop[] = await response.json();
@@ -40,6 +41,8 @@ export default function Home() {
       <Box margin="62px 16%">
         <Flex flexDirection="column" alignItems="center" >
           <Flex borderRadius="md" justifyContent="space-between" width="844px" height="1041px" padding="20px" backgroundColor="#FBF7F7">
+
+            {/* shop一覧表示 */}
             <UnorderedList listStyleType="none" marginLeft="0px">
               {shopList.map((list) => (
                 <ListItem key={list.shop_id} style={{ marginBottom: "50px" }}>
@@ -61,9 +64,12 @@ export default function Home() {
                 </ListItem>
               ))}
             </UnorderedList>
+
           </Flex>
         </Flex>
       </Box>
     </ChakraProvider >
   );
 }
+
+export default Home;

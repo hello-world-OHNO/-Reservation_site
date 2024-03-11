@@ -15,7 +15,7 @@ const ContactInput = forwardRef<HTMLInputElement, ContactInputProps>(({ id, labe
       <Flex justifyContent="space-between">
         <FormLabel fontSize="18px" fontWeight="bold">{label}</FormLabel>
         {inputType === 'text' && <Input id={id} width="420px" height="39px" {...register} />}
-        {inputType === 'textarea' && <Textarea id={id} width="420px" height="180px" resize="vertical" {...register} />}
+        {inputType === 'textarea' && <Textarea id={id} width="420px" height="180px" resize="vertical" placeholder='サービスについて。予約について' {...register} />}
       </Flex>
     </FormControl>
   );

@@ -5,8 +5,6 @@ import { useForm } from "react-hook-form";
 import Header from "../../../components/Header";
 import NameInput from "../../../components/NameInput"
 import DateInput from "../../../components/DateInput"
-import Btn from "../../../components/Btn"
-
 
 const customTheme = extendTheme({
   fonts: {
@@ -65,10 +63,12 @@ const ShopRsvPage = () => {
   useEffect(() => {
     const fetchShopInfo = async () => {
       try {
+        // shop情報の取得
         const response = await fetch(`http://localhost:3001/info/${shop_id}`);
         const shopData: ShopInfo = await response.json();
         setShopInfo(shopData);
 
+        // 予約可能時間の取得
         const availableTimesResponse = await fetch(`http://localhost:3001/rsv/${shop_id}`);
         const availableTimesData: AvailableTime = await availableTimesResponse.json();
         setAvailableTimes(availableTimesData);
@@ -114,7 +114,7 @@ const ShopRsvPage = () => {
         <Flex flexDirection="column" alignItems="center" >
           <Box borderRadius="md" justifyContent="space-between" width="844px" height="auto" backgroundColor="#FBF7F7">
 
-            {/* 該当店舗情報 */}
+            {/* 店舗情報 */}
             <h1 style={{ fontWeight: 'bold', fontSize: '48px', padding: "60px" }}>{shopInfo.name}</h1>
             <img src={shopInfo.img} alt={shopInfo.name} style={{ width: '720px', height: '287px', marginLeft: "60px", marginBottom: "25px" }} />
 
@@ -178,7 +178,6 @@ const ShopRsvPage = () => {
 
                 {/* 送信ボタン */}
                 <Flex justifyContent="center">
-                  {/* <Btn type="submit" disabled={isButtonDisabled} buttonText={isButtonDisabled ? '予約済み' : '予約する'} /> */}
                   <Button type="submit" marginTop="20px" colorScheme="blue" fontSize="14px" width="90px" height="36px" marginBottom="20px" isDisabled={isButtonDisabled} >
                     {isButtonDisabled ? '予約済み' : '予約する'}
                   </Button>
