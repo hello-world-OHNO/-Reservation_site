@@ -78,30 +78,33 @@ const ChatPage = () => {
   };
 
   return (
-    <ChakraProvider theme={customTheme}>
+    <ChakraProvider>
       <Header />
-      <Box width="1244px" height="900px" backgroundColor="#EFF4EB" display="flex" flexDirection="column" alignItems="center">
+      <Flex flexDirection="column" alignItems="center" >
 
-        {/* チャット表示箇所 */}
-        <Box width="1062px" height="415px" flex="1" overflowY="scroll" display="flex" flexDirection="column-reverse" >
-          {messages.map((message, index) => (
-            <Box key={index} display="flex" alignItems="center" marginBottom="10px" justifyContent={message.sender === 'User' ? 'flex-end' : 'flex-start'}>
-              {message.sender === 'User' ? null : <Avatar src={message.avatar} size="sm" marginRight="5px" />}
-              <Box backgroundColor="white" padding="10px" borderRadius="10px" marginLeft={message.sender === 'User' ? '5px' : '0'} marginRight={message.sender === 'User' ? '0' : '5px'} alignSelf={message.sender === 'User' ? 'flex-end' : 'flex-start'}>
-                <Text>{message.text}</Text>
+        <Box borderRadius="md" width="1244px" height="900px" backgroundColor="#EFF4EB" display="flex" flexDirection="column" alignItems="center">
+
+          {/* チャット表示箇所 */}
+          <Box width="1062px" height="415px" flex="1" overflowY="scroll" display="flex" flexDirection="column-reverse" >
+            {messages.map((message, index) => (
+              <Box key={index} display="flex" alignItems="center" marginBottom="10px" justifyContent={message.sender === 'User' ? 'flex-end' : 'flex-start'}>
+                {message.sender === 'User' ? null : <Avatar src={message.avatar} size="sm" marginRight="5px" />}
+                <Box backgroundColor="white" padding="10px" borderRadius="10px" marginLeft={message.sender === 'User' ? '5px' : '0'} marginRight={message.sender === 'User' ? '0' : '5px'} alignSelf={message.sender === 'User' ? 'flex-end' : 'flex-start'}>
+                  <Text>{message.text}</Text>
+                </Box>
+                {message.sender === 'User' ? <Avatar src={message.avatar} size="sm" marginRight="5px" /> : null}
               </Box>
-              {message.sender === 'User' ? <Avatar src={message.avatar} size="sm" marginRight="5px" /> : null}
-            </Box>
-          ))}
-        </Box>
+            ))}
+          </Box>
 
-        {/* 送信欄 */}
-        <Box display="flex" alignItems="center" justifyContent="flex-end" padding="20px">
-          <Input width="1062px" height="40px" flex="1" marginRight="10px" backgroundColor="white" value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
-          <Button colorScheme="blue" onClick={handleSendMessage}>送信</Button>
-        </Box>
+          {/* 送信欄 */}
+          <Box display="flex" alignItems="center" justifyContent="flex-end" padding="20px">
+            <Input width="1062px" height="40px" flex="1" marginRight="10px" backgroundColor="white" value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
+            <Button colorScheme="blue" onClick={handleSendMessage}>送信</Button>
+          </Box>
 
-      </Box>
+        </Box>
+      </Flex>
     </ChakraProvider>
   );
 }

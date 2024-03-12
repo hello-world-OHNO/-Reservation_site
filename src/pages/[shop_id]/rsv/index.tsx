@@ -142,7 +142,7 @@ const ShopRsvPage = () => {
                 <FormControl id="mailAddress" marginBottom="25px">
                   {errors.mailAddress && <span style={{ color: 'red' }}>正しいメールアドレスを入力してください</span>}
                   <FormLabel fontSize="18px" fontWeight="bold">メールアドレス</FormLabel>
-                  <Input id="mailAddress" width="604px" height="39px" {...register("mailAddress", { required: true, pattern: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/ })} />
+                  <Input border="1px" backgroundColor="white" id="mailAddress" width="604px" height="39px" {...register("mailAddress", { required: true, pattern: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/ })} />
                 </FormControl>
 
                 {/* 予約日時 */}
@@ -156,7 +156,7 @@ const ShopRsvPage = () => {
 
                 {/* 予約時間 */}
                 <Flex alignItems="center" marginBottom="25px">
-                  <Select {...register("reserveTime")} width="144px">
+                  <Select backgroundColor="white" border="1px" {...register("reserveTime")} width="144px">
                     <option value="">選択</option>
                     {availableTimes && availableTimes.times && Array.isArray(availableTimes.times) &&
                       availableTimes.times.map((timeObj, index) => (
@@ -172,7 +172,7 @@ const ShopRsvPage = () => {
                 <Flex>
                   <DateInput id="numberOfPeople" label="名" register={register("numberOfPeople", { required: "未入力です", pattern: /^[0-9]+$/ })} />
                 </Flex>
-                <Box textAlign="center">
+                <Box textAlign="center" fontWeight="bold" fontSize="24px">
                   {reservationMessage && <span>{reservationMessage}</span>}
                 </Box>
 

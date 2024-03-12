@@ -14,6 +14,8 @@ const NameInput = forwardRef<HTMLInputElement, NameInputProps>(({ id, label, wid
     <Flex alignItems="center" marginRight="8px" marginBottom="25px">
       <FormLabel fontSize="18px" fontWeight="bold" htmlFor={id}>{label}</FormLabel>
       <Input
+        border="1px"
+        backgroundColor="white"
         id={id}
         width={width}
         height={height}
