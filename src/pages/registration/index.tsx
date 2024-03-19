@@ -34,7 +34,7 @@ const Registration = () => {
   const handleRegistration = async () => {
     try {
       if (!auth) return;
-      await createUserWithEmailAndPassword(auth, email, password);
+      await createUserWithEmailAndPassword(auth, email, password,);
       console.log('User registered successfully');
       console.log(email, password)
     } catch (error) {

@@ -12,6 +12,6 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 
-const auth = getAuth(app); // getAuth関数にFirebaseのインスタンスを渡す
+const auth = getAuth(app);
 
 export { auth };
