@@ -45,7 +45,7 @@ const ContactPage = () => {
       <Box margin="62px 16%">
         <Flex flexDirection="column" alignItems="center" >
           <Box borderRadius="md" justifyContent="space-between" width="844px" height="750px" backgroundColor="#FBF7F7">
-            <h2 style={{ fontWeight: 'bold', fontSize: '24px', padding: "25px", marginLeft: "70px" }}>Contact</h2>
+            <h2 style={{ fontWeight: 'bold', fontSize: '24px', padding: "25px", marginLeft: "70px" }}>CONTACT</h2>
             <Flex flexDirection="column" alignItems="center" >
               <form onSubmit={handleSubmit(onSubmit)}>
                 <Box backgroundColor="white" borderRadius="md" padding="32px">
@@ -123,7 +123,7 @@ const ContactPage = () => {
                   {/* 性別 */}
                   <RadioGroup id="gender" marginBottom="25px">
                     <Flex>
-                      <Text fontSize="18px" fontWeight="bold" marginRight="100px">性別</Text>
+                      <Text fontSize="18px" fontWeight="bold" marginRight="115px">性別</Text>
                       <Box display="flex" alignItems="center" marginRight="32px">
                         <Box as="label" htmlFor="men" ml={2} fontSize="18px" fontWeight="bold" marginRight="8px">
                           男性

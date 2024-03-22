@@ -13,6 +13,8 @@ const DateInput = forwardRef<HTMLInputElement, DateInputProps>(({ id, label, wid
   return (
     <Flex alignItems="center" marginBottom="25px">
       <Input
+        border="1px"
+        backgroundColor="white"
         id={id}
         width={width}
         height={height}
