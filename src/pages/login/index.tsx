@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Box, ChakraProvider, extendTheme, Flex, Button, FormControl, FormLabel, Input, Link } from '@chakra-ui/react';
 import Header from "@/components/Header";
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
@@ -27,23 +27,19 @@ const customTheme = extendTheme({
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const { isLoggedIn } = useAuth();
-
-  useEffect(() => {
-    console.log(isLoggedIn);
-  }, [isLoggedIn]);
-
   const { login } = useAuth();
 
   const handleLogin = async () => {
     try {
       await signInWithEmailAndPassword(getAuth(), email, password);
       console.log('User logged in successfully');
+      // login関数を呼び出す  
       login();
     } catch (error) {
       console.error('Error logging in:', error);
     }
   };
+
 
   return (
     <ChakraProvider theme={customTheme}>

@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import Header from './components/Header';
-import Home from './pages';
+import Home from './pages/top';
 import Login from './pages/login';
 import ShopDetailPage from './pages/[shop_id]/shop_detail';
 import ShopRsvPage from './pages/[shop_id]/rsv';
@@ -10,6 +10,7 @@ import ChatPage from './pages/chat';
 import ContactPage from './pages/contact';
 import ContactCompletionPage from './pages/contactCompletion';
 import Registration from './pages/registration';
+
 
 const App = () => {
   return (
